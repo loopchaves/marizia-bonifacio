@@ -7,11 +7,23 @@
   line-height: 200%;
   font-family: var(--font-aboreto);
   color: #ff7463;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 850px) {
   .titulo {
     letter-spacing: 1px;
     font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .titulo {
+    font-size: 22px;
+    text-underline-offset: 10px;
+    text-decoration: underline 3px;
   }
 }

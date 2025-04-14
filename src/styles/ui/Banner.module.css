@@ -12,7 +12,7 @@
 .container img {
   width: 100%;
   height: 100%;
-  min-width: 1600px;
+  min-width: 100%;
   object-fit: cover;
 }
 
@@ -27,6 +27,9 @@
   left: 0;
   bottom: 0;
   right: 0;
+  padding: 0 1rem;
+  text-align: center;
+  width: 100%;
 }
 
 .container section h1 {
@@ -34,6 +37,7 @@
   color: #ff7463;
   font-size: 58px;
   text-shadow: 3px 2px #111111;
+  text-align: center;
 }
 
 .container section p {
@@ -41,6 +45,7 @@
   font-size: 15px;
   letter-spacing: 1.5px;
   text-shadow: 0 0 0.4rem #ffffff;
+  text-align: center;
 }
 
 .container section h2 {
@@ -49,6 +54,7 @@
   font-size: 28px;
   letter-spacing: 8px;
   text-shadow: 0 0 0.4rem #ff0000;
+  text-align: center;
 }
 
 .container section button {
@@ -59,7 +65,8 @@
   color: #dddddd;
   font-weight: bold;
   font-size: 16px;
-  width: 20rem;
+  width: 100%;
+  max-width: 20rem;
   cursor: pointer;
   margin-top: 1rem;
   transition: 0.1s ease;
@@ -104,10 +111,35 @@
 
 @media screen and (max-width: 450px) {
   .container section h1 {
-    font-size: 26px;
+    font-size: 22px;
+  }
+
+  .container section p {
+    font-size: 12px;
   }
 
   .container section h2 {
+    font-size: 16px;
     letter-spacing: 3px;
+  }
+
+  .container section button {
+    font-size: 14px;
+    padding: 0.6rem 0.8rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container section h1 {
+    font-size: 18px;
+  }
+
+  .container section p {
+    font-size: 10px;
+  }
+
+  .container section h2 {
+    font-size: 14px;
+    letter-spacing: 2px;
   }
 }
