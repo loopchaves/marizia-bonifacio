@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  padding: 15px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: var(--font-geist-sans);
+  color: #ff7463;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #faebd7b2;
+  z-index: 1000;
+  box-shadow: 0 2px 4px #faebd7b2;
+}
+
+.container a {
+  transition: 0.1s ease;
+}
+
+.container a:hover {
+  text-shadow: 0 0 0.5rem #ff0000;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    font-size: 11px;
+  }
+}
