@@ -95,6 +95,10 @@
   color: #ff0000;
 }
 
+.botao:active {
+  transform: scale(0.9);
+}
+
 .anterior {
   margin-left: 10px;
 }
