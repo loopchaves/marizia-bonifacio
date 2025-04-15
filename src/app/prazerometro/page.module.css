@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 5%;
+}
+
+.infoTilesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* gap: 30px; */
+  justify-items: center;
+}
+
+/* Telas médias (tablets) */
+@media (min-width: 768px) {
+  .infoTilesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Telas grandes (desktops) */
+@media (min-width: 1024px) {
+  .infoTilesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container {
+    margin: 10px 10%;
+  }
+}

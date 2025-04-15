@@ -1,16 +1,14 @@
 .titulo {
   font-size: 40px;
   text-align: center;
-  text-decoration: underline 4px;
-  text-underline-offset: 15px;
   letter-spacing: 3px;
-  line-height: 200%;
   font-family: var(--font-aboreto);
-  color: #ff7463;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  color: #333;
+  text-shadow: 0 0 0.2rem #000000;
+  white-space: wrap;
   max-width: 100%;
+  padding: 1rem 0;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 850px) {
@@ -22,8 +20,6 @@
 
 @media screen and (max-width: 480px) {
   .titulo {
-    font-size: 22px;
-    text-underline-offset: 10px;
-    text-decoration: underline 3px;
+    font-size: 20px;
   }
 }

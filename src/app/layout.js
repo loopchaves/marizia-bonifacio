@@ -34,12 +34,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${aboreto.variable} ${ptSerif.variable}`}
       >
         <Header />
         <div style={{ paddingTop: "60px" }}>
-          <Banner showButtons={true} limitHeight={false} />
+          <Banner />
           {children}
           <Footer />
         </div>

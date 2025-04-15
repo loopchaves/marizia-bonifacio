@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.iconContainer {
+  margin-bottom: 15px;
+  color: #ff7463;
+  font-size: 2.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ff7463;
+  font-family: var(--font-aboreto), sans-serif;
+  letter-spacing: 1px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}

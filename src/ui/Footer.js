@@ -17,13 +17,9 @@ export default function Footer() {
         </Link>
       </div>
       <div className={styles.info}>
-        <p>
-          <strong>Dra. Marízia Bonifácio{" "}</strong>
-          | CRP 2045-7 / 1ª Região
-        </p>
-        <p>
-          <strong>CNPJ 16.882.092/0001-10</strong>
-        </p>
+        <strong>Dra. Marízia Bonifácio </strong>
+        <p>CRP 2045-7 / 1ª Região</p>
+        <strong>CNPJ 16.882.092/0001-10</strong>
       </div>
     </footer>
   );

@@ -1,66 +1,54 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import Depoimentos from "./Depoimentos";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import styles from "@/styles/ui/Banner.module.css";
 
-export default function Banner({ showButtons, limitHeight }) {
+// { showButtons, limitHeight }
+export default function Banner() {
   const pathname = usePathname();
-  const [height, setHeight] = useState(limitHeight ? 200 : 665);
-  const [displayButtons, setDisplayButtons] = useState(showButtons);
-  
+  const [height, setHeight] = useState(665);
+  const [displayButtons, setDisplayButtons] = useState(true);
+
   useEffect(() => {
     // Detectar se estamos em uma das páginas que precisam de banner reduzido
-    const isReducedBannerPage = pathname === '/produtos' || pathname === '/terapias' || pathname === '/sobre';
-    
-  // Definir altura e visibilidade dos botões com base na rota atual
-    setHeight(isReducedBannerPage ? 200 : 665);
+    const isReducedBannerPage =
+      pathname === "/produtos" ||
+      pathname === "/prazerometro" ||
+      pathname === "/sobre";
+
+    // Definir altura e visibilidade dos botões com base na rota atual
+    setHeight(isReducedBannerPage ? 400 : 665);
     setDisplayButtons(!isReducedBannerPage);
-  }, [pathname, showButtons]);
+
+    // Rolar para o topo quando navegar para páginas com banner reduzido
+    if (isReducedBannerPage) {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname]); // showButtons
 
   return (
-    <div
-      className={styles.container}
-      style={{
-        height: height,
-        transition: "height 1.5s ease-in-out",
-        position: "relative",
-        overflow: "hidden",
-      }}
-    >
+    <div className={styles.container} style={{ height: height }}>
       <Image
         src="/banner-6.jpg"
         width={1920}
         height={665}
         alt="Banner da Dra. Marizia Bonifácio"
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          objectFit: "cover",
-          width: "100%",
-          height: "100%",
-        }}
       />
-      <section>
-        <h1>DRA. MARIZIA BONIFÁCIO</h1>
-        <p>PSICÓLOGA E SEXÓLOGA</p>
-        <h2>Amor e Prazer juntos!</h2>
+      <section className={styles.contentContainer}>
+        <h1 className={styles.titulo}>DRA. MARIZIA BONIFÁCIO</h1>
+        <p className={styles.funcao}>PSICÓLOGA E SEXÓLOGA</p>
+        <h2 className={styles.slogam}>Amor e Prazer juntos!</h2>
+        <Depoimentos />
         {displayButtons && (
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              gap: "1rem",
-            }}
-          >
+          <div className={styles.buttons}>
             <button>
-              <Link href="/produtos">Conheça meus produtos</Link>
+              <Link href="/prazerometro">Conheça o Prazerômetro</Link>
             </button>
             <button>
-              <Link href="/">Marcar um horário</Link>
+              <Link href="/produtos">Livros e Cursos</Link>
             </button>
           </div>
         )}

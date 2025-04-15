@@ -17,12 +17,18 @@
 }
 
 .container a {
+  text-align: center;
   transition: 0.1s ease;
 }
 
 .container a:hover {
   text-shadow: 0 0 0.5rem #ff0000;
   transform: scale(1.1);
+}
+
+.active {
+  color: #ff0000;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 850px) {

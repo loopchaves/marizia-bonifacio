@@ -1,0 +1,104 @@
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  /* padding: 20px 0; */
+}
+
+.carouselTrack {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carouselItem {
+  flex: 0 0 100%;
+  min-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 5px;
+  background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+.depoimento {
+  font-family: var(--font-geist-sans);
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: .8rem;
+  color: #333;
+}
+
+.autor {
+  font-family: var(--font-aboreto);
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #222;
+  font-size: 1rem;
+  text-shadow: 0 0 0.2rem #222;
+}
+
+.cidade {
+  font-family: var(--font-geist-sans);
+  font-weight: 400;
+  color: #222;
+  text-shadow: 0 0 1px #222;
+  font-size: 0.9rem;
+}
+
+.navegacao {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.indicador {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicadorAtivo {
+  background-color: #ff6b6b;
+}
+
+.botoes {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.botao {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #ff7463;
+  transition: 0.2s ease;
+}
+
+.botao:hover {
+  color: #ff0000;
+}
+
+.anterior {
+  margin-left: 10px;
+}
+
+.proximo {
+  margin-right: 10px;
+}
