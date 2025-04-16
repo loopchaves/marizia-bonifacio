@@ -21,7 +21,7 @@ export default function Terapias() {
       icon: <i className="fas fa-comment-slash"></i>,
       title: "Um Saber Antigo e Testado",
       description:
-        "Pode parecer novidade, mas o conhecimento do Prazerômetro é profundo e já foi testado. Já dei palestras com esse conteúdo em vários lugares do mundo. É algo que funciona!",
+        "Pode parecer novidade, mas o conhecimento do Prazerômetro é profundo e já foi testado. Já dei palestras com esse conteúdo em vários lugares do mundo.",
     },
     {
       icon: <i className="fas fa-lock"></i>,
