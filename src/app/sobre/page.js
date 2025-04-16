@@ -7,41 +7,65 @@ export default function Sobre() {
     <main className={styles.container}>
       <Titulo titulo="QUEM SOU EU?" />
       <div className={styles.content}>
-        <div className={styles.imageContainer}>
-          <Image
-            src="/piramides.jpg"
-            alt="Dra. Marizia Bonifácio nas pirâmides"
-            width={500}
-            height={500}
-            className={styles.image}
-          />
+        <div className={styles.imageWrapper}>
+          <div className={styles.leftImage}>
+            <Image
+              src="/radio.jpg"
+              alt="Dra. Marizia Bonifácio na rádio"
+              width={500}
+              height={500}
+              className={styles.image}
+            />
+          </div>
         </div>
         <div className={styles.textContainer}>
-          {/* <h2 className={styles.subtitle}>QUEM SOU EU?</h2> */}
           <p>
-            Me formei em Psicologia em 1977 e sempre me incomodou o fato de
-            mulheres relatarem que nunca chegaram lá.
+            Me formei em Psicologia no ano
+            de 1977 e, desde o início da minha carreira, fui profundamente
+            impactada pelos recorrentes relatos de mulheres que expressavam
+            dificuldades em alcançar a plena satisfação sexual e emocional.
           </p>
           <p>
-            Em 1999 iniciei o meu programa no rádio, numa missão de despertar o
-            poder que cada mulher carrega e contribuir para uma vida feliz,
-            realizada e emocionalmente independente.
+            Movida por essa constatação, em 1999, concebi e iniciei um programa
+            radiofônico com a missão de despertar o potencial de cada mulher,
+            fomentando a construção de uma existência feliz, realizada e
+            caracterizada pela autonomia emocional.
           </p>
           <p>
-            Comecei na rádio Atividade FM, onde fiquei até julho de 2002. Depois
-            disso, passei por várias outras rádios, como JK, Globo AM, Band AM,
-            Nativa, OK, MIG, Açaí, Opção, CesBrasília e Cerrado.
+            Minha trajetória no radio teve início na Rádio Atividade FM, onde
+            permaneci até julho de 2002. Logo, tive a oportunidade de levar
+            minha mensagem a um público mais amplo através de diversas emissoras
+            de renome, tais como Rádio JK, Globo AM, Band AM, Nativa, OK, MIG,
+            Açaí, Opção, CesBrasília e Cerrado.
+          </p>
+        </div>
+        <div className={styles.textContainer}>
+          <p>
+            No âmbito editorial, minha obra de maior destaque alcançou a
+            expressiva marca de mais de 10.000 exemplares físicos vendidos,
+            consolidando-se como uma referência na área. Atualmente, minha
+            principal contribuição para o desenvolvimento feminino
+            materializa-se no curso "Prazerômetro", um programa cuidadosamente
+            estruturado para guiar mulheres rumo à liberdade emocional e à
+            felicidade em suas relações interpessoais.
           </p>
           <p>
-            O meu livro mais famoso já vendeu mais de 10 mil cópias físicas. E o
-            meu curso, Prazerômetro, hoje é a minha maior contribuição para que
-            mulheres se tornem emocionalmente livres e felizes em suas relações.
+            É com imenso prazer que me coloco à disposição. Sou a{" "}
+            <strong>Dra. Marizia Bonifácio</strong>, e meu propósito é
+            conduzi-la por uma jornada transformadora através do complexo e
+            fascinante universo das emoções e do prazer.
           </p>
-          <p>
-            Muito prazer, eu sou a <strong>Dra. Marizia Bonifácio</strong> e
-            você está a uma década de viajar pelo universo das emoções do
-            prazer!
-          </p>
+        </div>
+        <div className={styles.imageWrapper}>
+          <div className={styles.rightImage}>
+            <Image
+              src="/piramides.jpg"
+              alt="Dra. Marizia Bonifácio nas pirâmides"
+              width={500}
+              height={500}
+              className={styles.image}
+            />
+          </div>
         </div>
       </div>
     </main>
