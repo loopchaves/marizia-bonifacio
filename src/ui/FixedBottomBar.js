@@ -9,7 +9,7 @@ export default function FixedBottomBar() {
         <span className={styles.apenasText}>APENAS</span>
         <span className={styles.priceText}>12X R$ 59,94</span>
       </div>
-      <Link href="/">
+      <Link href="/produtos/prazerometro">
         <button className={styles.infoButton}>+ Informações</button>
       </Link>
       <Link href="https://app.monetizze.com.br/checkout/DRP148878" target="_blank">

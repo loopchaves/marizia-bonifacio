@@ -17,7 +17,10 @@ export default function Banner() {
     const isReducedBannerPage =
       pathname === "/produtos" ||
       pathname === "/prazerometro" ||
-      pathname === "/sobre";
+      pathname === "/sobre" ||
+      pathname === "/produtos/prazerometro" ||
+      pathname === "/produtos/pompoarismo" ||
+      pathname === "/produtos/sexo_sem_frescura";
 
     // Definir altura e visibilidade dos botões com base na rota atual
     setHeight(isReducedBannerPage ? 400 : 665);

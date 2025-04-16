@@ -3,7 +3,7 @@ import InfoTile from "@/ui/Infotile";
 import FixedBottomBar from "@/ui/FixedBottomBar";
 import styles from "./page.module.css";
 
-export default function Terapias() {
+export default function Prazerômetro() {
   const infoTiles = [
     {
       icon: <i className="fas fa-user-secret"></i>,
