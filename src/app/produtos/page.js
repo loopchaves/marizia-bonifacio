@@ -5,7 +5,8 @@ import styles from "./page.module.css";
 export default function Produtos() {
   const produtos = {
     Prazerometro: {
-      price: "12X R$ 59,94",
+      price: "R$ 59,94",
+      priceAvista: "R$ 597,00",
       imageSrc: "/prazerometro.jpg",
       title: "PRAZERÔMETRO",
       infoLink: "/",
@@ -14,7 +15,8 @@ export default function Produtos() {
         "Curso completo, com mais de 100 horas, com conteúdo claro e lúdico para auto-terapia emocional e sexual.",
     },
     Pompoarismo: {
-      price: "12X R$ 8,96",
+      price: "R$ 9,74",
+      priceAvista: "R$ 97,00",
       imageSrc: "/pompoarismo.jpg",
       title: "POMPOARISMO",
       infoLink: "/",
@@ -23,7 +25,8 @@ export default function Produtos() {
         "Melhore sua saúde íntima e aumente o prazer e com técnicas milenares de fortalecimento do assoalho pélvico.",
     },
     SexoSemFrescura: {
-      price: "12X R$ 20,95",
+      price: "R$ 25,10",
+      priceAvista: "R$ 250,00",
       imageSrc: "/sexo_sem_frescura.jpg",
       title: "SEXO SEM FRESCURA",
       infoLink: "/",
@@ -43,6 +46,7 @@ export default function Produtos() {
             title={produtos[produto].title}
             description={produtos[produto].description}
             price={produtos[produto].price}
+            priceAvista={produtos[produto].priceAvista}
             infoLink={produtos[produto].infoLink}
             buyLink={produtos[produto].buyLink}
             key={produto}

@@ -7,6 +7,7 @@ export default function Card({
   title,
   description,
   price,
+  priceAvista,
   infoLink,
   buyLink,
 }) {
@@ -24,6 +25,12 @@ export default function Card({
       <div className={styles.content}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.description}>{description}</p>
+        <div className={styles.priceContainer}>
+          <span className={styles.priceText}>
+            12x <strong>{price}</strong>
+          </span>
+          <span className={styles.avistaText}>{priceAvista} AVISTA</span>
+        </div>
         <div>
           <Link href={infoLink}>
             <button className={styles.infoButton}>+ Informações</button>
@@ -31,7 +38,6 @@ export default function Card({
           <Link href={buyLink} target="_blank">
             <button className={styles.buyButton}>Comprar Agora</button>
           </Link>
-          <div className={styles.price}>{price}</div>
         </div>
       </div>
     </div>
