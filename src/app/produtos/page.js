@@ -12,7 +12,7 @@ export default function Produtos() {
       infoLink: "/",
       buyLink: "https://app.monetizze.com.br/checkout/DRP148878",
       description:
-        "Curso completo, com mais de 100 horas, com conteúdo claro e lúdico para auto-terapia emocional e sexual.",
+        "Encontre sua felicidade! Guia estruturado para mulheres alcançarem liberdade emocional e bem-estar nos relacionamentos e consigo mesma.",
     },
     Pompoarismo: {
       price: "R$ 9,74",
@@ -22,7 +22,7 @@ export default function Produtos() {
       infoLink: "/",
       buyLink: "https://app.monetizze.com.br/checkout/DWX332007",
       description:
-        "Melhore sua saúde íntima e aumente o prazer e com técnicas milenares de fortalecimento do assoalho pélvico.",
+        "Melhore sua saúde íntima e aumente o prazer com técnicas milenares de fortalecimento do assoalho pélvico.",
     },
     SexoSemFrescura: {
       price: "R$ 25,10",
@@ -32,7 +32,7 @@ export default function Produtos() {
       infoLink: "/",
       buyLink: "https://app.monetizze.com.br/checkout/KJB404496",
       description:
-        "Esta é uma cartilha sobre prazer sexual, ensinando como sentir e como dar prazer a si mesmo e ao seu parceiro(a).",
+        "Descubra o prazer! Ebook ensina a sentir e dar prazer. Liberte-se e explore seu potencial máximo!",
     },
   };
 

@@ -7,56 +7,57 @@ export default function Terapias() {
   const infoTiles = [
     {
       icon: <i className="fas fa-user-secret"></i>,
-      title: "NINGUÉM PODE SABER",
+      title: "Totalmente Sigiloso",
       description:
-        "Absolutamente ninguém, além de você, saberá. Discrição até na fatura do cartão.",
+        "Fique tranquila! Ninguém vai saber que você está fazendo o curso. A compra é discreta e o nome do curso não aparece na fatura do seu cartão. Seu segredo está guardado.",
     },
     {
       icon: <i className="fas fa-desktop"></i>,
-      title: "NÃO POSSO PRESENCIAL",
+      title: "Faça de Onde Quiser",
       description:
-        "Não se preocupe. O curso é 100% online e você pode fazer de qualquer lugar.",
+        "Não pode ou não quer sair de casa? O Prazerômetro é totalmente online. Você acessa pelo celular, computador ou tablet, na hora que for melhor para você e no conforto do seu lar.",
     },
     {
       icon: <i className="fas fa-comment-slash"></i>,
-      title: "NUNCA OUVI FALAR",
+      title: "Um Saber Antigo e Testado",
       description:
-        "É um conhecimento muito antigo! Já realizei palestras com esse conteúdo em vários lugares do mundo.",
+        "Pode parecer novidade, mas o conhecimento do Prazerômetro é profundo e já foi testado. Já dei palestras com esse conteúdo em vários lugares do mundo. É algo que funciona!",
     },
     {
       icon: <i className="fas fa-lock"></i>,
-      title: "TENHO BLOQUEIOS",
+      title: "Para Superar Bloqueios",
       description:
-        "O curso é pensado para quebrar suas crenças limitantes e promover o autoconhecimento em busca do prazer.",
+        "Sente que algo te impede de sentir prazer ou se conhecer melhor? O Prazerômetro foi criado justamente pra te ajudar a quebrar essas barreiras mentais e emocionais.",
     },
     {
       icon: <i className="fas fa-heart"></i>,
-      title: "ESTOU SOLTEIRA",
+      title: "Perfeito para Solteiras Também",
       description:
-        "O Prazerômetro é uma jornada de autoconhecimento e auto-terapia. Emoções e prazer andam juntos.",
+        "O Prazerômetro é sobre você. É uma jornada pra se conhecer, entender suas emoções e descobrir seu próprio prazer, esteja você num relacionamento ou não.",
     },
     {
       icon: <i className="fas fa-user-clock"></i>,
-      title: "JÁ PASSEI DA IDADE",
-      description: "Eu tenho alunas de 18 a 70 anos. O prazer não tem idade.",
+      title: "Prazer Não Tem Idade",
+      description:
+        "Acha que já passou da idade? Tenho alunas dos 18 aos 70 anos redescobrindo a alegria e o prazer. Nunca é tarde pra ser feliz.",
     },
     {
       icon: <i className="fas fa-fire"></i>,
-      title: "NÃO CONSIGO MAIS",
+      title: '"Acho que Não Consigo Mais"',
       description:
-        "Conteúdo claro, lúdico, didático e objetivo para quebrar mais essa crença que te impede de ser plena!",
+        "Se você pensa assim, o Prazerômetro é pra você! O conteúdo é explicado de forma clara, fácil de entender e prática, pra derrubar essa ideia de que não é mais capaz de sentir prazer e ser plena.",
     },
     {
       icon: <i className="fas fa-ban"></i>,
-      title: "NÃO FUNCIONA PARA MIM",
+      title: "Funciona Mesmo? Sim!",
       description:
-        "O Prazerômetro já ajudou milhares de mulheres a encontrarem prazer e autoconhecimento em suas relações.",
+        "Milhares de mulheres já fizeram o Prazerômetro e encontraram mais prazer, autoconhecimento e felicidade em suas vidas e relações. Se funcionou pra elas, pode funcionar pra você também!",
     },
     {
       icon: <i className="fas fa-money-bill-wave"></i>,
-      title: "NÃO TENHO DINHEIRO",
+      title: "E o Dinheiro?",
       description:
-        "Entre em contato com o nosso suporte que encontraremos formas de facilitar o pagamento para você!",
+        "A grana está curta? A gente entende. Entre em contato com nossa equipe de suporte. Queremos te ajudar e vamos conversar para encontrar uma forma de pagamento que facilite pra você!",
     },
   ];
 
@@ -64,6 +65,12 @@ export default function Terapias() {
     <>
       <main className={styles.container}>
         <Titulo titulo="O prazerômetro é pra você" />
+        <p className={styles.descricaoPrazerometro}>
+          O Prazerômetro é um curso pensado pra ajudar você a se sentir mais
+          livre emocionalmente, feliz nos seus relacionamentos e consigo mesma.
+          Um programa cuidadosamente estruturado para guiar mulheres rumo à
+          liberdade emocional e à felicidade. Veja o que você precisa saber:
+        </p>
         <div className={styles.infoTilesGrid}>
           {infoTiles.map((tile, index) => (
             <InfoTile key={index} {...tile} />

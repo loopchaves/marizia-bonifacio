@@ -30,7 +30,7 @@ export default function Sobre() {
             caracterizada pela autonomia emocional.
           </p>
           <p>
-            Minha trajetória no radio teve início na Rádio Atividade FM, onde
+            Minha trajetória no radio teve início na Atividade FM, onde
             permaneci até julho de 2002. Logo, tive a oportunidade de levar
             minha mensagem a um público mais amplo através de diversas emissoras
             de renome, tais como Rádio JK, Globo AM, Band AM, Nativa, OK, MIG,

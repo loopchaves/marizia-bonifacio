@@ -27,8 +27,8 @@ const ptSerif = PT_Serif({
 });
 
 export const metadata = {
-  title: "Dra. Marizia Bonifácio - Amor e prazer juntos",
-  description: "Site oficial da Dra. Marizia Bonifácio.",
+  title: "Dra. Marizia Bonifácio",
+  description: "Amor e Prazer juntos!",
 };
 
 export default function RootLayout({ children }) {
