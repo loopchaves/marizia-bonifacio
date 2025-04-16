@@ -6,13 +6,19 @@ export default function Footer() {
   return (
     <footer className={styles.container}>
       <div className={styles.social}>
-        <Link href="/">
+        <Link
+          href="https://www.instagram.com/bonifaciomariziaoliveira/"
+          target="_blank"
+        >
           <FiInstagram />
         </Link>
-        <Link href="/">
+        <Link href="https://www.facebook.com/Velsheleer" target="_blank">
           <FiFacebook />
         </Link>
-        <Link href="/">
+        <Link
+          href="https://www.youtube.com/@MariziaBonifacio22"
+          target="_blank"
+        >
           <FiYoutube />
         </Link>
       </div>
