@@ -4,12 +4,13 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  /* padding: 20px 0; */
+  touch-action: pan-y;
 }
 
 .carouselTrack {
   display: flex;
   transition: transform 0.5s ease;
+  touch-action: pan-y;
 }
 
 .carouselItem {
@@ -20,6 +21,7 @@
   text-align: center;
   border-radius: 5px;
   background-color: hsla(0, 0%, 100%, 0.3);
+  user-select: none;
 }
 
 .depoimento {
@@ -27,7 +29,7 @@
   font-style: italic;
   margin-bottom: 20px;
   line-height: 1.6;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #333;
 }
 
@@ -105,4 +107,10 @@
 
 .proximo {
   margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .botoes {
+    display: none;
+  }
 }

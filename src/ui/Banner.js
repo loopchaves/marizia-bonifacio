@@ -44,12 +44,12 @@ export default function Banner() {
         <Depoimentos />
         {displayButtons && (
           <div className={styles.buttons}>
-            <button>
-              <Link href="/prazerometro">Conheça o Prazerômetro</Link>
-            </button>
-            <button>
-              <Link href="/produtos">Livros e Cursos</Link>
-            </button>
+            <Link href="/prazerometro">
+              <button>Conheça o Prazerômetro</button>
+            </Link>
+            <Link href="/produtos">
+              <button>Livros e Cursos</button>
+            </Link>
           </div>
         )}
       </section>

@@ -50,6 +50,9 @@ export default function Depoimentos() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const intervalRef = useRef(null);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   // Função para avançar para o próximo depoimento
   const nextDepoimento = () => {
@@ -80,9 +83,44 @@ export default function Depoimentos() {
     }, 10000); // Muda a cada 10 segundos
   };
 
-  // Inicia o slide automático quando o componente é montado
+  // Função para detectar swipe
+  const handleTouchStart = (e) => {
+    setTouchStart(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      nextDepoimento();
+    } else if (isRightSwipe) {
+      prevDepoimento();
+    }
+
+    // Reset values
+    setTouchStart(null);
+    setTouchEnd(null);
+  };
+
+  // Inicia o slide automático quando o componente é montado e detecta se é dispositivo touch
   useEffect(() => {
     startAutoSlide();
+
+    // Detecta se é um dispositivo touchscreen
+    const isTouchCapable =
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0;
+
+    setIsTouchDevice(isTouchCapable);
 
     // Limpa o intervalo quando o componente é desmontado
     return () => {
@@ -97,6 +135,9 @@ export default function Depoimentos() {
       <div
         className={styles.carouselTrack}
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
       >
         {depoimentos.map((item, index) => (
           <div key={index} className={styles.carouselItem}>
