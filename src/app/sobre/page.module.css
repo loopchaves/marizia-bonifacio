@@ -53,21 +53,15 @@
     margin: 10px 5%;
   }
 
+  .content {
+    flex-direction: column;
+  }
+
   .imageContainer {
     margin-bottom: 1.5rem;
   }
 
   .subtitle {
     font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .content {
-    flex-direction: column;
-  }
-
-  .textContainer {
-    padding: 0 10%;
   }
 }

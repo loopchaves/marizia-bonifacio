@@ -17,7 +17,7 @@ export default function Sobre() {
           />
         </div>
         <div className={styles.textContainer}>
-          <h2 className={styles.subtitle}>QUEM SOU EU?</h2>
+          {/* <h2 className={styles.subtitle}>QUEM SOU EU?</h2> */}
           <p>
             Me formei em Psicologia em 1977 e sempre me incomodou o fato de
             mulheres relatarem que nunca chegaram lá.

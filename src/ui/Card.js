@@ -1,7 +1,15 @@
 import styles from "@/styles/ui/Card.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Card({ imageSrc, title, description, price }) {
+export default function Card({
+  imageSrc,
+  title,
+  description,
+  price,
+  infoLink,
+  buyLink,
+}) {
   return (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
@@ -17,8 +25,12 @@ export default function Card({ imageSrc, title, description, price }) {
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.description}>{description}</p>
         <div>
-          <button className={styles.infoButton}>+ Informações</button>
-          <button className={styles.buyButton}>Comprar Agora</button>
+          <Link href={infoLink}>
+            <button className={styles.infoButton}>+ Informações</button>
+          </Link>
+          <Link href={buyLink} target="_blank">
+            <button className={styles.buyButton}>Comprar Agora</button>
+          </Link>
           <div className={styles.price}>{price}</div>
         </div>
       </div>

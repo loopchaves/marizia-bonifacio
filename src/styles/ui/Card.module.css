@@ -58,6 +58,16 @@
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 10px;
+  transition: 0.2s ease;
+}
+
+.infoButton:hover {
+  background-color: #fdc0c0;
+}
+
+.infoButton:active {
+  transform: scale(0.95);
+  background-color: #fdc0c0;
 }
 
 .buyButton {
@@ -88,9 +98,11 @@
 }
 
 .price {
-  color: #333;
-  font-size: 28px;
+  font-family: var(--font-aboreto);
+  text-shadow: 0 0 0.2rem #000000;
+  font-size: 24px;
   font-weight: bold;
+  color: #333;
 }
 
 /* Media queries para responsividade */
