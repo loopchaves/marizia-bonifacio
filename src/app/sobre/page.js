@@ -7,23 +7,21 @@ export default function Sobre() {
     <main className={styles.container}>
       <Titulo titulo="QUEM SOU EU?" />
       <div className={styles.content}>
-        <div className={styles.imageWrapper}>
-          <div className={styles.leftImage}>
-            <Image
-              src="/radio.jpg"
-              alt="Dra. Marizia Bonifácio na rádio"
-              width={500}
-              height={500}
-              className={styles.image}
-            />
-          </div>
+        <div className={styles.leftImage}>
+          <Image
+            src="/radio.jpg"
+            alt="Dra. Marizia na rádio 104,1FM"
+            width={500}
+            height={500}
+            className={styles.image}
+          />
         </div>
         <div className={styles.textContainer}>
           <p>
-            Me formei em Psicologia no ano
-            de 1977 e, desde o início da minha carreira, fui profundamente
-            impactada pelos recorrentes relatos de mulheres que expressavam
-            dificuldades em alcançar a plena satisfação sexual e emocional.
+            Me formei em Psicologia no ano de 1977 e, desde o início da minha
+            carreira, fui profundamente impactada pelos recorrentes relatos de
+            mulheres que expressavam dificuldades em alcançar a plena satisfação
+            sexual e emocional.
           </p>
           <p>
             Movida por essa constatação, em 1999, concebi e iniciei um programa
@@ -56,16 +54,14 @@ export default function Sobre() {
             fascinante universo das emoções e do prazer.
           </p>
         </div>
-        <div className={styles.imageWrapper}>
-          <div className={styles.rightImage}>
-            <Image
-              src="/piramides.jpg"
-              alt="Dra. Marizia Bonifácio nas pirâmides"
-              width={500}
-              height={500}
-              className={styles.image}
-            />
-          </div>
+        <div className={styles.rightImage}>
+          <Image
+            src="/piramides.jpg"
+            alt="Dra. Marizia nas pirâmides do Egito"
+            width={500}
+            height={500}
+            className={styles.image}
+          />
         </div>
       </div>
     </main>
