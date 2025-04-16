@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono, Aboreto, PT_Serif } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "@/styles/globals.css";
 import Header from "@/ui/Header";
 import Banner from "@/ui/Banner";
@@ -49,6 +50,7 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
         </div>
+        <Analytics />
       </body>
     </html>
   );
