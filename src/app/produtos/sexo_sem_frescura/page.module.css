@@ -1,0 +1,160 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imageContainer {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #555;
+  max-width: 800px;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.priceText {
+  font-family: var(--font-aboreto);
+  text-shadow: 0 0 0.2rem #000000;
+  font-size: 20px;
+  color: #333;
+}
+
+.priceText strong {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.avistaText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 10px;
+  color: #333;
+}
+
+.buyButton {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ff7463;
+  text-shadow: 0 0 0.2rem #000000;
+  color: #dddddd;
+  font-weight: bold;
+  border: none;
+  min-width: 180px;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: 0.1s ease;
+}
+
+.buyButton:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+  box-shadow: 0 0 1rem #ff0000;
+}
+
+.buyButton:active {
+  transform: scale(0.95);
+  background-color: #ff0000;
+  color: #ffffff;
+  box-shadow: 0 0 1rem #ff0000;
+}
+
+.backLink {
+  color: #666;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.backLink:hover {
+  color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1.5rem;
+  }
+
+  .priceAvista {
+    font-size: 1.2rem;
+  }
+
+  .buyButton {
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .imageContainer {
+    margin-bottom: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .buyButton {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.9rem;
+  }
+}

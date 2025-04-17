@@ -18,6 +18,7 @@ export const produtos = [
     buyLink: "https://app.monetizze.com.br/checkout/DWX332007",
     description:
       "Melhore sua saúde íntima e aumente o prazer com técnicas milenares de fortalecimento do assoalho pélvico.",
+    descriptionObject: [],
   },
   {
     title: "SEXO SEM FRESCURA",
@@ -28,5 +29,6 @@ export const produtos = [
     buyLink: "https://app.monetizze.com.br/checkout/KJB404496",
     description:
       "Descubra o prazer! Ebook ensina a sentir e dar prazer. Liberte-se e explore seu potencial máximo!",
+    descriptionObject: [],
   },
 ];
