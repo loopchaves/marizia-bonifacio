@@ -2,17 +2,25 @@ import React from "react";
 import Link from "next/link";
 import styles from "./styles/FixedBottomBar.module.css";
 
-export default function FixedBottomBar() {
+export default function FixedBottomBar({
+  price,
+  priceAvista,
+  buttonLink,
+  buttonText,
+  buyLink,
+}) {
   return (
     <div className={styles.fixedBar}>
       <div className={styles.priceContainer}>
-        <span className={styles.apenasText}>APENAS</span>
-        <span className={styles.priceText}>12X R$ 59,94</span>
+        <span className={styles.priceText}>
+          12x <strong>{price}</strong>
+        </span>
+        <span className={styles.avistaText}>{priceAvista} Á VISTA</span>
       </div>
-      <Link href="/produtos/prazerometro">
-        <button className={styles.infoButton}>+ Informações</button>
+      <Link href={buttonLink}>
+        <button className={styles.infoButton}>{buttonText}</button>
       </Link>
-      <Link href="https://app.monetizze.com.br/checkout/DRP148878" target="_blank">
+      <Link href={buyLink} target="_blank">
         <button className={styles.buyButton}>Comprar agora</button>
       </Link>
     </div>

@@ -2,9 +2,13 @@ import Titulo from "@/ui/Titulo";
 import InfoTile from "@/ui/Infotile";
 import FixedBottomBar from "@/ui/FixedBottomBar";
 import { infoTiles } from "@/utils/infoTiles";
+import { produtos } from "@/utils/produtos";
 import styles from "./page.module.css";
 
 export default function Prazerômetro() {
+  // Encontrar o produto específico
+  const produto = produtos.find((p) => p.title === "PRAZERÔMETRO");
+
   return (
     <>
       <main className={styles.container}>
@@ -21,7 +25,13 @@ export default function Prazerômetro() {
           ))}
         </div>
       </main>
-      <FixedBottomBar />
+      <FixedBottomBar
+        price={produto.price}
+        priceAvista={produto.priceAvista}
+        buttonLink="/produtos/prazerometro"
+        buttonText="+ Informações"
+        buyLink={produto.buyLink}
+      />
     </>
   );
 }
