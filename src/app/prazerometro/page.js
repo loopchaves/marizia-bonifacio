@@ -29,7 +29,7 @@ export default function Prazerômetro() {
         price={produto.price}
         priceAvista={produto.priceAvista}
         buttonLink="/produtos/prazerometro"
-        buttonText="+ Informações"
+        buttonText="Conteúdo do curso"
         buyLink={produto.buyLink}
       />
     </>
