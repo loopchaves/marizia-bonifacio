@@ -1,4 +1,4 @@
-import styles from "@/styles/ui/Infotile.module.css";
+import styles from "./styles/Infotile.module.css";
 
 export default function InfoTile({ icon, title, description }) {
   return (

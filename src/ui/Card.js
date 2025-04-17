@@ -1,6 +1,6 @@
-import styles from "@/styles/ui/Card.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "./styles/Card.module.css";
 
 export default function Card({
   imageSrc,
@@ -29,7 +29,7 @@ export default function Card({
           <span className={styles.priceText}>
             12x <strong>{price}</strong>
           </span>
-          <span className={styles.avistaText}>{priceAvista} AVISTA</span>
+          <span className={styles.avistaText}>{priceAvista} Á VISTA</span>
         </div>
         <div>
           <Link href={infoLink}>

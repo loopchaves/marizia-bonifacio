@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import styles from "@/styles/ui/Depoimentos.module.css";
+import styles from "./styles/Depoimentos.module.css";
 
 export default function Depoimentos() {
   const depoimentos = [
@@ -11,7 +11,7 @@ export default function Depoimentos() {
         "Quero lhe agradecer por ter escrito o livro mágico SEXO SEM FRESCURA. Realmente ninguém tem até hoje, coragem para publicar algo tão verdadeiro e cheio de fotos reais e coloridas . A senhora mata a cobra e mostra o pau. Minha vida conujugal mudou radicalmente, eu me permiti a falar como gosto, como quero e quando estou disposta. Deixei de ser mudinha e submissa. Estou me amando mais, e, sendo respeitada. Muito obrigada.",
     },
     {
-      nome: "RANGEL m. T. RODRIGUES",
+      nome: "RANGEL M. T. RODRIGUES",
       cidade: "Porto Alegre - RS",
       depoimento:
         "Tenho acompanhando a coluna onde a senhora responde perguntas. Foi assim, que eu a conheci e passei a exercitar seus ensinamentos. A resposta que dava a outras pessoas, serviram para eu repensar minha vida sexual, emocional e de relacionamentos vários. Até quando a senhora fala do comportamento no local de serviço , ajudou na minha transformação. O mundo deveria ter mais pessoas como a senhora. Muito obrigada.",

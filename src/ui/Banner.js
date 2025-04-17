@@ -4,9 +4,8 @@ import Link from "next/link";
 import Depoimentos from "./Depoimentos";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import styles from "@/styles/ui/Banner.module.css";
+import styles from "./styles/Banner.module.css";
 
-// { showButtons, limitHeight }
 export default function Banner() {
   const pathname = usePathname();
   const [height, setHeight] = useState(665);
@@ -14,13 +13,7 @@ export default function Banner() {
 
   useEffect(() => {
     // Detectar se estamos em uma das páginas que precisam de banner reduzido
-    const isReducedBannerPage =
-      pathname === "/produtos" ||
-      pathname === "/prazerometro" ||
-      pathname === "/sobre" ||
-      pathname === "/produtos/prazerometro" ||
-      pathname === "/produtos/pompoarismo" ||
-      pathname === "/produtos/sexo_sem_frescura";
+    const isReducedBannerPage = pathname !== "/";
 
     // Definir altura e visibilidade dos botões com base na rota atual
     setHeight(isReducedBannerPage ? 400 : 665);
@@ -30,7 +23,7 @@ export default function Banner() {
     if (isReducedBannerPage) {
       window.scrollTo(0, 0);
     }
-  }, [pathname]); // showButtons
+  }, [pathname]);
 
   return (
     <div className={styles.container} style={{ height: height }}>
@@ -38,7 +31,7 @@ export default function Banner() {
         src="/banner-6.jpg"
         width={1920}
         height={665}
-        alt="Banner da Dra. Marizia Bonifácio"
+        alt="Mulher sensual e homem"
       />
       <section className={styles.contentContainer}>
         <h1 className={styles.titulo}>DRA. MARIZIA BONIFÁCIO</h1>

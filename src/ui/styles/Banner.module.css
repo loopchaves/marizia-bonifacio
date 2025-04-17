@@ -25,7 +25,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: .5rem;
+  gap: 0.5rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -54,10 +54,10 @@
 }
 
 .slogam {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-pt-serif);
   font-weight: 800;
   color: #ff7463;
-  font-size: 28px;
+  font-size: 1.8rem;
   letter-spacing: 8px;
   text-shadow: 0 0 0.1rem #000000;
   text-align: center;
@@ -108,60 +108,56 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .container section h1 {
+  .titulo {
     font-size: 46px;
   }
 
-  .container section h2 {
+  .slogam {
     font-size: 22px;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .container section {
-    gap: 0.5rem;
-  }
-
-  .container section h1 {
+  .titulo {
     font-size: 32px;
     text-shadow: 2px 1px #111111;
   }
 
-  .container section h2 {
+  .slogam {
     font-size: 22px;
     letter-spacing: 5px;
   }
 
-  .container section button {
+  .buttons button {
     margin-top: 0.5rem;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .container section h1 {
+  .titulo {
     font-size: 22px;
   }
 
-  .container section p {
+  .funcao {
     font-size: 12px;
   }
 
-  .container section h2 {
+  .slogam {
     font-size: 16px;
     letter-spacing: 3px;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .container section h1 {
+  .titulo {
     font-size: 18px;
   }
 
-  .container section p {
+  .funcao {
     font-size: 10px;
   }
 
-  .container section h2 {
+  .slogam {
     font-size: 14px;
     letter-spacing: 2px;
   }

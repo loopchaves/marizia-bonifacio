@@ -1,6 +1,6 @@
 import { FiInstagram, FiFacebook, FiYoutube } from "react-icons/fi";
 import Link from "next/link";
-import styles from "@/styles/ui/Footer.module.css";
+import styles from "./styles/Footer.module.css";
 
 export default function Footer() {
   return (

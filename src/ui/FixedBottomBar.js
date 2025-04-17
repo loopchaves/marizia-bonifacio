@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import styles from "@/styles/ui/FixedBottomBar.module.css";
+import styles from "./styles/FixedBottomBar.module.css";
 
 export default function FixedBottomBar() {
   return (
