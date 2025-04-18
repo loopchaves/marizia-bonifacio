@@ -5,7 +5,6 @@
   justify-content: center;
   padding: 2rem;
   max-width: 1200px;
-  /* margin: 0 auto; */
 }
 
 .contentWrapper {
@@ -31,18 +30,19 @@
   object-fit: cover;
 }
 
-.mulherChocada {
+.contentPrincipal {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin: 1rem 0;
 }
 
-.mulherChocadaImage {
-  width: 100%;
+.mulherImage {
+  width: auto;
   height: auto;
+  max-height: 500px;
   max-width: 500px;
-  object-fit: cover;
+  object-fit: scale-down;
 }
 
 .descriptionContainer {
@@ -130,12 +130,12 @@
     margin-bottom: 1.5rem;
   }
 
-  .mulherChocada {
+  .contentPrincipal {
     flex-direction: column;
     gap: 0;
   }
 
-  .mulherChocadaImage {
+  .mulherImage {
     padding: 0 1rem;
   }
 }

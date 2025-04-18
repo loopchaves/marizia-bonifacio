@@ -14,14 +14,14 @@ export default function Prazerometro() {
           <Image
             src={produto.imageSrc}
             alt={produto.title}
-            width={500}
-            height={500}
+            width={408}
+            height={612}
             className={styles.image}
             priority
           />
         </div>
 
-        <div className={styles.mulherChocada}>
+        <div className={styles.contentPrincipal}>
           <div className={styles.contentWrapper}>
             <div className={styles.descriptionContainer}>
               <p className={styles.descriptionTitle}>
@@ -48,7 +48,7 @@ export default function Prazerometro() {
             alt="Mulher chocada"
             width={768}
             height={960}
-            className={styles.mulherChocadaImage}
+            className={styles.mulherImage}
             priority
           />
         </div>
