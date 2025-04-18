@@ -33,6 +33,10 @@ export default function SexoSemFrescura() {
             priority
           />
           <div className={styles.descriptionContainer}>
+            <p className={styles.descriptionTitle}>
+              O livro é enviado em carta registrada e o prazo de entrega é de 10
+              a 15 dias.
+            </p>
             <p className={styles.description}>
               Este livro é também uma cartilha do prazer. Já foram vendidas mais
               de 10 mil cópias! Ensina como fazer pra sentir e dar prazer a si
@@ -52,10 +56,6 @@ export default function SexoSemFrescura() {
               o meu curso, Prazerômetro, hoje é a minha maior contribuição para
               que mulheres se tornem emocionalmente livres e felizes em suas
               relações.
-            </p>
-            <p className={styles.description}>
-              O livro é enviado em carta registrada e o prazo de entrega é de 10
-              a 15 dias.
             </p>
           </div>
         </div>
