@@ -76,9 +76,9 @@
     padding: 1.5rem;
   }
 
-  /* .descriptionTitle {
-    font-size: 2rem;
-  } */
+  .descriptionTitle {
+    font-size: 1rem;
+  }
 
   .description {
     font-size: 1rem;
