@@ -12,45 +12,54 @@ import "./globals.css";
 
 export const metadata = {
   title: {
-    default: 'Marizia Bonifacio - Amor e Prazer juntos',
-    template: '%s | Marizia Bonifacio'
+    default: "Marizia Bonifacio - Amor e Prazer juntos",
+    template: "%s | Marizia Bonifacio",
   },
-  description: 'Descubra como alcançar mais prazer e satisfação em seus relacionamentos com os cursos e produtos da Marizia Bonifacio, especialista em sexualidade feminina.',
-  keywords: ['pompoarismo', 'sexualidade feminina', 'prazer sexual', 'relacionamentos', 'autoconhecimento'],
-  authors: [{ name: 'Marizia Bonifacio' }],
-  creator: 'Marizia Bonifacio',
-  publisher: 'Marizia Bonifacio',
+  description:
+    "Descubra como alcançar mais prazer e satisfação em seus relacionamentos com os cursos e produtos da Marizia Bonifacio, especialista em sexualidade feminina.",
+  keywords: [
+    "pompoarismo",
+    "sexualidade feminina",
+    "prazer sexual",
+    "relacionamentos",
+    "autoconhecimento",
+  ],
+  authors: [{ name: "Marizia Bonifacio" }],
+  creator: "Marizia Bonifacio",
+  publisher: "Marizia Bonifacio",
   formatDetection: {
     email: false,
     telephone: false,
     address: false,
   },
-  metadataBase: new URL('https://mariziabonifacio.com.br'),
+  metadataBase: new URL("https://mariziabonifacio.com.br"),
   alternates: {
-    canonical: '/',
+    canonical: "/",
   },
   openGraph: {
-    title: 'Marizia Bonifacio - Especialista em Sexualidade Feminina',
-    description: 'Descubra como alcançar mais prazer e satisfação em seus relacionamentos com os cursos e produtos da Marizia Bonifacio.',
-    url: 'https://mariziabonifacio.com.br',
-    siteName: 'Marizia Bonifacio',
+    title: "Marizia Bonifacio - Especialista em Sexualidade Feminina",
+    description:
+      "Descubra como alcançar mais prazer e satisfação em seus relacionamentos com os cursos e produtos da Marizia Bonifacio.",
+    url: "https://mariziabonifacio.com.br",
+    siteName: "Marizia Bonifacio",
     images: [
       {
-        url: '/banner-6.jpg',
-        width: 1920,
-        height: 665,
-        alt: 'Marizia Bonifacio - Especialista em Sexualidade Feminina',
+        url: "/banner-6.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Marizia Bonifacio - Especialista em Sexualidade Feminina",
       },
     ],
-    locale: 'pt_BR',
-    type: 'website',
+    locale: "pt_BR",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Marizia Bonifacio - Especialista em Sexualidade Feminina',
-    description: 'Descubra como alcançar mais prazer e satisfação em seus relacionamentos com os cursos e produtos da Marizia Bonifacio.',
-    images: ['/banner-6.jpg'],
-    creator: '@mariziabonifacio',
+    card: "summary_large_image",
+    title: "Marizia Bonifacio - Especialista em Sexualidade Feminina",
+    description:
+      "Descubra como alcançar mais prazer e satisfação em seus relacionamentos com os cursos e produtos da Marizia Bonifacio.",
+    images: ["https://mariziabonifacio.com.br/banner-6.jpg"],
+    creator: "@mariziabonifacio",
   },
   robots: {
     index: true,
@@ -58,16 +67,23 @@ export const metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
   },
-  manifest: '/site.webmanifest', // TALVEZ
+  manifest: "/site.webmanifest", // TALVEZ
+  other: {
+    "whatsapp-platform": "whatsapp",
+    "whatsapp-title": "Marizia Bonifacio - Amor e Prazer juntos",
+    "whatsapp-description":
+      "Descubra como alcançar mais prazer e satisfação em seus relacionamentos com os cursos e produtos da Marizia Bonifacio.",
+    "whatsapp-image": "https://mariziabonifacio.com.br/banner-6.jpg",
+  },
 };
 
 export default function RootLayout({ children }) {

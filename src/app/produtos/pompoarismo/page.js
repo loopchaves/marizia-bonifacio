@@ -15,7 +15,7 @@ export const metadata = {
       "Aprenda técnicas de pompoarismo para fortalecer sua musculatura íntima, aumentar o prazer sexual e melhorar sua saúde íntima.",
     images: [
       {
-        url: "/pompoarismo.jpg",
+        url: "https://mariziabonifacio.com.br/pompoarismo.jpg",
         width: 1024,
         height: 576,
         alt: "Livro Pompoarismo - Marizia Bonifacio",

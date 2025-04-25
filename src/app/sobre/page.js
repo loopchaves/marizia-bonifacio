@@ -12,13 +12,13 @@ export const metadata = {
       "Conheça a trajetória da Dra. Marizia Bonifácio, psicóloga formada em 1977, apresentadora de rádio e autora dedicada ao desenvolvimento emocional e sexual feminino.",
     images: [
       {
-        url: "/radio.jpg",
+        url: "https://mariziabonifacio.com.br/radio.jpg",
         width: 500,
         height: 500,
         alt: "Dra. Marizia na rádio 104,1FM",
       },
       {
-        url: "/piramides.jpg",
+        url: "https://mariziabonifacio.com.br/piramides.jpg",
         width: 500,
         height: 500,
         alt: "Dra. Marizia nas pirâmides do Egito",
@@ -33,7 +33,7 @@ export const metadata = {
       "Sobre Dra. Marizia Bonifácio | Psicóloga e Especialista em Sexualidade",
     description:
       "Conheça a trajetória da Dra. Marizia Bonifácio, psicóloga formada em 1977, apresentadora de rádio e autora dedicada ao desenvolvimento emocional e sexual feminino.",
-    images: ["/radio.jpg"],
+    images: ["https://mariziabonifacio.com.br/radio.jpg"],
   },
   keywords: [
     "Marizia Bonifácio",

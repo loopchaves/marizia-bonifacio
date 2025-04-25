@@ -12,7 +12,7 @@ export const metadata = {
     description: 'O Prazerômetro é um método exclusivo que ajuda mulheres a identificarem bloqueios emocionais e alcançarem o prazer pleno em suas relações.',
     images: [
       {
-        url: '/prazerometro.jpg',
+        url: 'https://mariziabonifacio.com.br/prazerometro.jpg',
         width: 1024,
         height: 576,
         alt: 'Prazerômetro - Marizia Bonifacio',
