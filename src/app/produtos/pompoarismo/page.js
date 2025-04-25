@@ -1,8 +1,29 @@
 import { produtos } from "@/utils/produtos";
+import ProductSchema from "@/utils/ProductSchema";
 import FixedBottomBar from "@/ui/FixedBottomBar";
 import Titulo from "@/ui/Titulo";
 import Image from "next/image";
 import styles from "./page.module.css";
+
+export const metadata = {
+  title: "Livro Pompoarismo - Fortaleça sua Musculatura Íntima",
+  description:
+    "Aprenda técnicas de pompoarismo para fortalecer sua musculatura íntima, aumentar o prazer sexual e melhorar sua saúde íntima.",
+  openGraph: {
+    title: "Livro Pompoarismo - Fortaleça sua Musculatura Íntima",
+    description:
+      "Aprenda técnicas de pompoarismo para fortalecer sua musculatura íntima, aumentar o prazer sexual e melhorar sua saúde íntima.",
+    images: [
+      {
+        url: "/pompoarismo.jpg",
+        width: 1024,
+        height: 576,
+        alt: "Livro Pompoarismo - Marizia Bonifacio",
+      },
+    ],
+    type: "article",
+  },
+};
 
 export default function Pompoarismo() {
   // Encontrar o produto específico
@@ -10,6 +31,7 @@ export default function Pompoarismo() {
 
   return (
     <>
+      <ProductSchema product={produto} />
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <Image

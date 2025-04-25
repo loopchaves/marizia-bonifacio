@@ -2,6 +2,52 @@ import Titulo from "@/ui/Titulo";
 import styles from "./page.module.css";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Quem sou eu? | Psicóloga e Especialista em Sexualidade",
+  description:
+    "Conheça a trajetória da Dra. Marizia Bonifácio, psicóloga formada em 1977, apresentadora de rádio e autora dedicada ao desenvolvimento emocional e sexual feminino.",
+  openGraph: {
+    title: "Quem sou eu? | Psicóloga e Especialista em Sexualidade",
+    description:
+      "Conheça a trajetória da Dra. Marizia Bonifácio, psicóloga formada em 1977, apresentadora de rádio e autora dedicada ao desenvolvimento emocional e sexual feminino.",
+    images: [
+      {
+        url: "/radio.jpg",
+        width: 500,
+        height: 500,
+        alt: "Dra. Marizia na rádio 104,1FM",
+      },
+      {
+        url: "/piramides.jpg",
+        width: 500,
+        height: 500,
+        alt: "Dra. Marizia nas pirâmides do Egito",
+      },
+    ],
+    locale: "pt_BR",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Sobre Dra. Marizia Bonifácio | Psicóloga e Especialista em Sexualidade",
+    description:
+      "Conheça a trajetória da Dra. Marizia Bonifácio, psicóloga formada em 1977, apresentadora de rádio e autora dedicada ao desenvolvimento emocional e sexual feminino.",
+    images: ["/radio.jpg"],
+  },
+  keywords: [
+    "Marizia Bonifácio",
+    "psicóloga",
+    "sexualidade feminina",
+    "programa de rádio",
+    "prazerômetro",
+    "desenvolvimento emocional",
+  ],
+  alternates: {
+    canonical: "/sobre",
+  },
+};
+
 export default function Sobre() {
   return (
     <main className={styles.container}>

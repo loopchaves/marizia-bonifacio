@@ -5,6 +5,24 @@ import { infoTiles } from "@/utils/infoTiles";
 import { produtos } from "@/utils/produtos";
 import styles from "./page.module.css";
 
+export const metadata = {
+  title: 'Prazerômetro - Descubra o Caminho para o Prazer Pleno',
+  description: 'O Prazerômetro é um método exclusivo que ajuda mulheres a identificarem bloqueios emocionais e alcançarem o prazer pleno em suas relações.',
+  openGraph: {
+    title: 'Prazerômetro - Descubra o Caminho para o Prazer Pleno',
+    description: 'O Prazerômetro é um método exclusivo que ajuda mulheres a identificarem bloqueios emocionais e alcançarem o prazer pleno em suas relações.',
+    images: [
+      {
+        url: '/prazerometro.jpg',
+        width: 1024,
+        height: 576,
+        alt: 'Prazerômetro - Marizia Bonifacio',
+      },
+    ],
+    type: 'website',
+  },
+};
+
 export default function Prazerômetro() {
   // Encontrar o produto específico
   const produto = produtos.find((p) => p.title === "PRAZERÔMETRO");

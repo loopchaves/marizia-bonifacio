@@ -1,9 +1,27 @@
 import { produtos } from "@/utils/produtos";
+import ProductSchema from "@/utils/ProductSchema";
 import FixedBottomBar from "@/ui/FixedBottomBar";
 import Titulo from "@/ui/Titulo";
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./page.module.css";
+
+export const metadata = {
+  title: 'Sexo Sem Frescura - Liberte-se de Tabus e Viva sua Sexualidade',
+  description: 'O curso Sexo Sem Frescura ajuda mulheres a se libertarem de tabus e preconceitos para viverem uma sexualidade plena e prazerosa.',
+  openGraph: {
+    title: 'Sexo Sem Frescura - Liberte-se de Tabus e Viva sua Sexualidade',
+    description: 'O curso Sexo Sem Frescura ajuda mulheres a se libertarem de tabus e preconceitos para viverem uma sexualidade plena e prazerosa.',
+    images: [
+      {
+        url: '/sexo_sem_frescura.jpg',
+        width: 1024,
+        height: 576,
+        alt: 'Sexo Sem Frescura - Marizia Bonifacio',
+      },
+    ],
+    type: 'article',
+  },
+};
 
 export default function SexoSemFrescura() {
   // Encontrar o produto específico
@@ -11,6 +29,7 @@ export default function SexoSemFrescura() {
 
   return (
     <>
+      <ProductSchema product={produto} />
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <Image
